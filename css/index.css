@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+li {
+    list-style: none;
+}
+
+#mainDiv {
+    width: 760px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    height: 190px;
+    background-color: aquamarine;
+}
+
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+#banner {
+    width: 100%;
+    height: 60px;
+
+    background: url(../img/760x60.gif);
+    margin: 10px 0;
+}
+
+#act {
+
+    width: 250px;
+    height: 226px;
+    background-color: #203676;
+
+}
+#act h1 {
+    width: 250px;
+    height: 32px;
+    background: url("../img/jmd_top.jpg");
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+#act  div {
+    width: 250px;
+    height: 188px;
+    background:url("../img/jmd_bg.jpg");
+    /*不能用这个，开头数字不能对齐*/
+    /*可以将包裹它的整个盒子做个宽度和margin*/
+    /*text-align: center;*/
+   overflow: auto;
+
+}
+
+#act div ul li {
+    width: 53%;
+    margin: auto;
+}
+#act div ul li span{
+    font-size:12px ;
+}
+#act div ul li span:first-of-type {
+
+    color: #90ee5f;
+   margin-right: 10px;
+}
+#act div ul li span:last-of-type {
+
+    color: white;
+
+}
+
+#ad {
+
+
+    width: 250px;
+    height: 100px;
+    margin: 10px 0;
+    background:url("../img/250x100_1.gif");
+}
+#video {
+
+    width: 500px;
+    height: 336px;
+    background-color: #d71212;
+    float: right;
+}
+#video h1 {
+    width: 500px;
+    height: 31px;
+    background: url("../img/flv_top.jpg");
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+}
+#video div {
+    width: 500px;
+    height: 305px;
+    background: url("../img/flv_bg.jpg");
+
+}
+#video div video {
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+#video div ul {
+    width: 18%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+#video div ul li  img {
+    width: 100%;
+}
+
+#top  {
+    width: 250px;
+    height: 340px;
+    background-color: #367328;
+    float: left;
+    margin-right: 10px;
+}
+#top h1 {
+    width: 250px;
+    height: 32px;
+    background: url("../img/jmd_top.jpg");
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+#top  div {
+    width: 250px;
+    height: 302px;
+    background:url("../img/jmd_bg.jpg");
+    /*不能用这个，开头数字不能对齐*/
+    /*可以将包裹它的整个盒子做个宽度和margin*/
+    /*text-align: center;*/
+    overflow: auto;
+
+}
+#top p {
+    width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 14px;
+    border-bottom:1px gray solid;
+    padding-top: 10px;
+}
+#top p span{
+     padding: 3px 3px 0 3px;
+    border: 1px solid grey;
+    border-bottom: none;
+    margin-left: 3%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#top p span:last-child{
+    background-color: gray;
+    color: white;
+}
+#top div ul {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#top div ul li {
+    width: 80%;
+    margin: auto;
+    height: 28px;
+    line-height: 28px;
+}
+#top div ul li img:first-of-type{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#top div ul li img:last-of-type {
+   height: 28px;
+    float: right;
+}
+#commend {
+    width: 500px;
+    height: 119px;
+    background-color: #775b36;
+    float: left;
+    margin-bottom: 10px;
+}
+#commend h1 {
+    width: 500px;
+    height: 31px;
+    background: url("../img/flv_top.jpg");
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+}
+#commend div {
+    width: 500px;
+    height: 82px;
+    background: url("../img/flv_bg.jpg");
+
+}
+#commend div table {
+    width: 90%;
+    margin: auto;
+}
+#commend div table tr td {
+    padding:10px 5px;
+}
+
+#compere {
+    width: 500px;
+    height: 140px;
+    background-color: #30535b;
+    float: left;
+    margin-bottom: 10px;
+}
+#compere h1 {
+    width: 500px;
+    height: 31px;
+    background: url("../img/flv_top.jpg");
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+}
+#compere div {
+    width: 500px;
+    height: 103px;
+    background: url("../img/flv_bg.jpg");
+
+}
+#compere div dl{
+    color: white;
+    font-size: 10px;
+    width: 40%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+#compere div dl dt:first-child{
+    float: left;
+    margin-right: 5px;
+}
+#partner {
+    width: 500px;
+    height: 60px;
+    background:url("../img/friendlogo.gif");
+    float: left;
+    margin-bottom: 10px;
+}
+#footer {
+    width: 100%;
+    height: 120px;
+    background:url("../img/footer.gif");
+    /*清楚浮动带来的影响*/
+    clear: both;
+}
