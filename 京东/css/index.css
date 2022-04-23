@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+#header {
+
+    width: 100%;
+    height: 30px;
+    background-color: #f7f7f7;
+    color: #6b6c67;
+    font-size: 12px;
+    line-height: 30px;
+
+}
+
+.container {
+    width: 1205px;
+    margin: 0 auto;
+}
+
+#header_left {
+    float: left;
+    /*设置两个盒子的margin*/
+    /*margin-left: 63px;*/
+}
+
+#header_left span:hover {
+    color: #d71212;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#header_left img {
+    vertical-align: middle;
+}
+
+#header_right {
+    /*margin-right: 53px;*/
+    float: right;
+}
+
+#header ul li {
+    display: inline-block;
+
+
+}
+
+#header ul li a {
+    color: #6b6c67;
+}
+
+#header ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#header ul li img {
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+/*需要选择第九个li中的 a前面的 不然就选不中*/
+#header_right ul li:nth-child(9) a::before {
+    content: '';
+    width: 21px;
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/dakehu.jpg");
+}
+
+#phone a::before {
+    content: '';
+    width: 11px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/iconlist_2.png) -129px -360px;
+}
+
+#phone a:hover::before {
+    /*因为只要修改背景图就可以了，所以不再需要写别的了*/
+    /*content: '';*/
+    /*width: 11px;*/
+    /*height: 22px;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+
+    /*background: url(../img/iconlist_2.png) -129px -400px ;*/
+    background-position: -129px -400px;
+}
+
+#nav {
+    /*ps*/
+    /*background-color: pink;*/
+    height: 90px;
+
+}
+
+#nav h1 {
+    width: 265px;
+    height: 90px;
+    background: url("../img/logo-201305.png") no-repeat 0 center;
+
+}
+
+#nav .nav_searchbar {
+    width: 502px;
+    height: 100%;
+    margin: 20px 85px 15px 40px;
+    position: relative;
+}
+
+#nav .nav_searchbar input {
+    width: 100%;
+    height: 31px;
+    border: 2px solid #e33a3c;
+    border-right: 83px solid #e33a3c;
+    color: #999;
+    padding-left: 10px;
+}
+
+#nav .nav_searchbar button {
+    position: absolute;
+    right: 27px;
+    top: 6px;
+    background-color: #e33a3c;
+    color: white;
+    /*需要把button的border去掉，就用这个属性*/
+    border: none;
+}
+
+#nav .nav_searchbar ul {
+    margin-top: 10px;
+
+}
+
+#nav .nav_searchbar ul li {
+    float: left;
+    color: #9a9dbf;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+#nav .nav_searchbar ul li:first-child {
+    margin-right: 0;
+}
+
+#nav .nav_searchbar ul li a {
+    color: #9a9dbf;
+
+}
+
+#nav .nav_searchbar ul li a:hover {
+    text-decoration: underline;
+}
+
+#nav .nav_info {
+    width: 260px;
+    height: 30px;
+    margin: 28px auto;
+    /*ps*/
+    /*background-color: blue;*/
+}
+
+#nav .nav_info img {
+    width: 93px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#nav .nav_info a:last-child img {
+    height: 40px;
+}
+
+#nav .nav_info a:hover {
+    /* 让元素颜色变化，比如说这个是鼠标放上去让选择框变透明一点
+    造成视察效果，告诉你选中了*/
+    opacity: .8;
+}
+
+#mainDiv {
+
+    height: 450px;
+    /*ps*/
+    /*background-color: pink;*/
+    position: relative;
+}
+
+#mainDiv .mainDiv_left {
+    width: 205px;
+    height: 450px;
+    /*ps*/
+    /*background-color: blue;*/
+
+
+}
+
+#mainDiv .mainDiv_left_list {
+    height: 410px;
+    background-color: #fafafa;
+}
+
+#mainDiv .mainDiv_left ul li {
+    padding-left: 15px;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid white;
+    background-color: #fafafa;
+}
+
+#mainDiv .mainDiv_left ul li:hover {
+    border: none;
+}
+
+#mainDiv .mainDiv_left ul li a {
+    color: #3a3431;
+}
+
+#title {
+    position: relative;
+    height: 40px;
+    font-size: 14px;
+    background-color: #cc2c2b;
+    color: white;
+    font-weight: 600;
+}
+
+#title span {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+}
+
+#title span::after {
+    content: '';
+    width: 12px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 80px;
+    background: url("../img/jtr.jpg");
+}
+
+#mainDiv .main_div_right {
+
+    width: 1000px;
+    height: 450px;
+    /*background-color: green;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mainDiv .main_div_right
+.main_div_right_nav {
+    height: 40px;
+    width: 100%;
+    background-color: #e54445;
+}
+#mainDiv .main_div_right
+.main_div_right_nav ul{
+   text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+}
+#mainDiv .main_div_right
+.main_div_right_nav ul li{
+    float: left;
+     width: 80px;
+
+}
+#mainDiv .main_div_right
+.main_div_right_nav ul li a {
+    color: white;
+}
+#mainDiv .main_div_right
+.main_div_right_nav ul li:hover{
+    background-color: #cc2c2b;
+}
+#mainDiv .banner{
+    position: relative;
+    width: 670px;
+    height: 240px;
+    margin: 10px 10px 0 10px;
+    background:url("../img/index/banner_02.jpg");
+}
+
+#mainDiv .main_div_right .banner div{
+    width: 20px;
+    height: 20px;
+    background-color: #383d34;
+     color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    position: absolute;
+   bottom: 15px;
+    right: 170px;
+}
+#mainDiv .main_div_right .banner div:nth-of-type(2){
+    right: 135px;
+}
+#mainDiv .main_div_right .banner div:nth-of-type(3){
+    right: 100px;
+}
+#mainDiv .main_div_right .banner div:nth-of-type(4){
+    right: 65px;
+}
+#mainDiv .main_div_right .banner div:nth-of-type(5){
+    right: 30px;
+}
+#mainDiv .main_div_right .ad {
+    width: 670px;
+    height: 160px;
+    /*ps*/
+    background-color:white;
+    margin: 0 10px;
+    position: relative;
+}
+#mainDiv .main_div_right .ad div{
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+#mainDiv .main_div_right .ad .arrow1{
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background:url("../img/index/ad-arraw.png") -6px -6px;
+    left: 10px;
+    bottom: 65px;
+    border: none;
+
+}
+#mainDiv .main_div_right .ad .arrow1:hover{
+    background: url("../img/index/ad-arraw-hover.png") -6px -6px;
+}
+#mainDiv .main_div_right .ad .arrow2:hover{
+    background: url("../img/index/ad-arraw-hover.png") -6px -43px;
+}
+#mainDiv .main_div_right .ad .arrow2{
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background:url("../img/index/ad-arraw.png") -6px -43px;
+    right: 10px;
+    bottom: 65px;
+    border: none;
+
+}
+
+
+
+#ad1{
+    width: 235px;
+    height: 160px;
+    background: url("../img/index/ad_01.jpg") no-repeat ;
+    background-size: contain;
+    float: left;
+}
+#ad2{
+    width: 200px;
+    height: 160px;
+    background: url("../img/index/ad_02.jpg") no-repeat ;
+    background-size: contain;
+    float: left;
+}
+#ad3{
+    width: 235px;
+    height: 160px;
+    background: url("../img/index/ad_03.jpg") no-repeat ;
+    background-size: contain;
+    float: left;
+}
+#mainDiv .main_div_right .main_div_right_ad_left {
+    width: 300px;
+    height: 402px;
+    /*background-color: pink;*/
+     position: absolute;
+    bottom:0;
+    right: 0;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .ad_focus{
+    width: 100%;
+    height: 70px;
+    background:url("../img/index/ad_focus.jpg");
+}
+#mainDiv .main_div_right .main_div_right_ad_left .ad_text{
+    width: 100%;
+    height:130px ;
+    /*background-color: rebeccapurple;*/
+    margin-top: 20px;
+    font-size: 12px;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .ad_text>span:first-child{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#mainDiv .main_div_right .main_div_right_ad_left .ad_text span:nth-of-type(2){
+    float: right;
+    color: #00629e;
+}
+#ad_text_list {
+    width: 100%;
+    height:108px ;
+   box-sizing: border-box;
+    border-top: 2px solid #f1f1f1 ;
+
+}
+#ad_text_list span {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px  ;
+    font-size: 10px;
+}
+#ad_text_list span ul{
+    width: 100%;
+    height: 100%;
+}
+
+#ad_text_list span ul li {
+    margin-bottom: 10px;
+
+}
+#ad_text_list span ul li:last-child{
+   margin-bottom: 0px;
+}
+#ad_text_list span ul li a{
+    color: #6b6c67;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .vr{
+    width: 100%;
+    height: 160px;
+    /*background-color: blue;*/
+    position: absolute;
+    /*margin-top: 15px;*/
+    bottom: 0;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .vr div{
+    width: 25%;
+    height: 50%;
+    /*background-color: #de08b3;*/
+    float: left;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #6b6c67;
+    text-align: center;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:first-of-type::before{
+    content:'';
+    width: 40px;
+    height: 30px;
+    background:url("../img/index/virtuals-20140606.png") -10px -2px;
+    display: inline-block;
+    margin-top:12px;
+    margin-left:20px;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(2)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(3)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(4)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(5)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(6)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(7)::before,
+#mainDiv .main_div_right .main_div_right_ad_left .vr div:nth-of-type(8)::before
+{
+    content:'';
+    width: 40px;
+    height: 30px;
+    background:url("../img/index/virtuals-20140606.png") -68px -1px;
+    display: inline-block;
+    margin-top:12px;
+    margin-left:10px;
+}
+#mainDiv .main_div_right .main_div_right_ad_left .vr div::after{
+        content: "";
+    width: 6px;
+    height: 3px;
+    background:url("../img/index/virtuals_arraw.gif");
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 2px;
+
+}
