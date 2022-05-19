@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #042104;
+    /*改变整个盒子的颜色*/
+    animation: animateColor 8s linear infinite;
+
+}
+@keyframes animateColor {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(180deg);
+    }
+
+}
+section .container {
+    /*让盒子水平*/
+    display: flex;
+}
+
+section .container .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    /*ps*/
+    /*background-color: blue;*/
+    /*让盒子感觉是重叠的*/
+    margin: 0 -7.5px;
+
+}
+
+section .container .circle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*ps*/
+    /*background-color: red;*/
+    /*让每一个span都旋转，因为有20个，需要均匀的所以角度是360/20=18deg*/
+    transform: rotate(calc(18deg * var(--i)));
+}
+/*在每个span的前面添加伪元素，形成小圆点，每个小圆点大小为15px*/
+section .container .circle span::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    /*注意cacl()中需要有空格，不然会解析错误*/
+    top: calc(50% - 7.5px);
+    width: 15px;
+    height: 15px;
+    background-color: #00ff0a;
+    border-radius: 50%;
+    /*让每个小圆点都有阴影*/
+    box-shadow: 0 0 10px #00ff0a,
+    0 0 20px #00ff0a,
+    0 0 40px #00ff0a,
+    0 0 60px #00ff0a,
+    0 0 80px #00ff0a,
+    0 0 100px #00ff0a;
+    /*缩放，让它变小一点*/
+    transform: scale(0.1);
+    animation: an 4s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+
+}
+
+@keyframes an {
+    0% {
+        transform: scale(1);
+    }
+    50%, 100% {
+        transform: scale(0.1);
+    }
+}
+
+section .container .circle:nth-child(2) {
+    transform: rotate(-180deg);
+}
+section .container .circle:nth-child(2) span::before{
+    animation-delay: calc(-0.1s * var(--i));
+}
